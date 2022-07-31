@@ -3,12 +3,12 @@
 echo "-----------------------------------------------------------------------------"
 curl -s https://raw.githubusercontent.com/razumv/helpers/main/doubletop.sh | bash
 echo "-----------------------------------------------------------------------------"
-if [ ! $NODENAME_GEAR ]; then
-	read -p "Введите ваше имя ноды(придумайте, без спецсимволов - только буквы и цифры): " NODENAME_GEAR
+if [ -z $NODENAME_GEAR ]; then
+        read -p "Введите ваше имя ноды (придумайте, без спецсимволов - только буквы и цифры): " NODENAME_GEAR
+        echo 'export NODENAME='$NODENAME_GEAR >> $HOME/.profile
 fi
 echo 'Ваше имя ноды: ' $NODENAME_GEAR
 sleep 1
-echo 'export NODENAME='$NODENAME_GEAR >> $HOME/.profile
 echo "-----------------------------------------------------------------------------"
 echo "Устанавливаем софт"
 echo "-----------------------------------------------------------------------------"
