@@ -24,7 +24,7 @@ echo "--------------------------------------------------------------------------
 echo "Echo wallet secret"
 echo "-----------------------------------------------------------------------------"
 #Echo wallet secret
-SECRET=$(./massa-client --pwd $massa_pass wallet_get_secret_key $ADDRESS | grep "S12")
+SECRET=$(./massa-client --pwd $massa_pass wallet_get_secret_key $ADDRESS | grep "S1")
 echo $SECRET
 
 echo "-----------------------------------------------------------------------------"
