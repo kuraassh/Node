@@ -6,12 +6,12 @@ fi
 echo 'your discord: ' $DISCORD
 sleep 1
 
-echo "-----------------------------------------------------------------------------"
-echo "Generate new wallet"
-echo "-----------------------------------------------------------------------------"
+#echo "-----------------------------------------------------------------------------"
+#echo "Generate new wallet"
+#echo "-----------------------------------------------------------------------------"
 # Generate new wallet
-cd $HOME/massa/massa-client
-./massa-client --pwd $massa_pass wallet_generate_secret_key
+#cd $HOME/massa/massa-client
+#./massa-client --pwd $massa_pass wallet_generate_secret_key
 
 echo "-----------------------------------------------------------------------------"
 echo "Echo wallet address"
@@ -44,10 +44,10 @@ echo "--------------------------------------------------------------------------
 echo "Echo all data to file"
 echo "-----------------------------------------------------------------------------"
 #Echo all data to file 
-echo $ADDRESS $SECRET $REG > massa_20.txt
+echo $ADDRESS $SECRET $REG > massa_20_2.txt
 
 echo "-----------------------------------------------------------------------------"
 echo "Your data"
 echo "-----------------------------------------------------------------------------"
 #Your data
-cat massa_20.txt
+cat massa_20_2.txt
