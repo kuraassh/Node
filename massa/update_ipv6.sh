@@ -27,7 +27,7 @@ function massa_backup {
 		cp $HOME/massa/massa-client/wallet.dat $HOME/massa_backup21/
 	fi
 	if [ ! -e $HOME/massa_backup21.tar.gz ]; then
-		tar cvzf massa_backup.tar21.gz massa_backup19
+		tar cvzf massa_backup.tar21.gz massa_backup21
 	fi
 }
 
@@ -38,8 +38,8 @@ function delete {
 }
 
 function install {
-  wget https://github.com/massalabs/massa/releases/download/TEST.21.0/massa_TEST.21.0_release_linux.tar.gz
-  tar zxvf massa_TEST.21.0_release_linux.tar.gz -C $HOME/
+  wget https://github.com/massalabs/massa/releases/download/TEST.22.1/massa_TEST.22.1_release_linux.tar.gz
+  tar zxvf massa_TEST.22.1_release_linux.tar.gz -C $HOME/
 }
 
 function routable_ip {
